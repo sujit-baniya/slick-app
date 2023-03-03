@@ -3,7 +3,7 @@ package clear.db
 import java.sql.Timestamp
 import java.text.SimpleDateFormat
 import java.util._
-import scala.slick.driver.MySQLDriver.simple._
+import com.github.takezoe.slick.blocking.BlockingH2Driver.blockingApi._
 
 abstract class Adapter {
   /**

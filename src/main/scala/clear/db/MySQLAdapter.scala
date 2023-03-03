@@ -1,6 +1,6 @@
 package clear.db
 
-import scala.slick.driver.MySQLDriver.simple._
+import com.github.takezoe.slick.blocking.BlockingH2Driver.blockingApi._
 
 case class MySQLAdapter(url:String, user:String, password:String)
     extends Adapter {

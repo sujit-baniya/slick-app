@@ -1,6 +1,6 @@
 package clear.dao
 
-import scala.slick.jdbc.GetResult
+import slick.jdbc.GetResult
 
 case class ChargeCode(charge_master_uid: Int,
                       client_internal_code: String,

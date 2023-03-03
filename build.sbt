@@ -3,6 +3,7 @@ organization := "com.test"
 version := "2017-03-21-110810.8368309 "
 scalaVersion := "2.12.17"
 scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature")
+crossScalaVersions := List("2.12.17", "2.13.10")
 
 libraryDependencies ++= Seq(
     "org.http4s" %% "http4s-blaze-server" % "0.16.6",
@@ -15,7 +16,7 @@ libraryDependencies ++= Seq(
     "org.http4s" %% "http4s-tomcat"      % "0.16.6" % "provided",
     "javax.servlet" % "javax.servlet-api" % "3.0.1" % "provided",
     
-    "com.typesafe.slick" %% "slick" % "2.1.0",
+    "com.github.takezoe" %% "blocking-slick-33" % "0.0.13",
     "mysql" % "mysql-connector-java" % "8.0.32",
     "org.flywaydb" % "flyway-core" % "4.2.0",
 
