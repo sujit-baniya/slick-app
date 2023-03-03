@@ -5,7 +5,6 @@ scalaVersion := "2.12.17"
 scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature")
 
 libraryDependencies ++= Seq(
-    "com.edelbergcodes" %% "clear2serviceapi" % "0.1-SNAPSHOT", // This is obtained through `sbt publish-local`; see Makefile
     "org.http4s" %% "http4s-blaze-server" % "0.16.6",
     "org.http4s" %% "http4s-core"        % "0.16.6",
     "org.http4s" %% "http4s-scala-xml"   % "0.16.6",
